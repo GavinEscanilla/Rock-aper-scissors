@@ -1,11 +1,9 @@
-body{
-    
-}
+
 h1{
     text-align: center;
 }
 div{
-    
+    cursor: pointer;
     border: 1px solid black;
     height: 100px;
     width:100px;
@@ -33,7 +31,9 @@ div{
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   text-align: center;
    justify-content: center;
    
+}
+svg{
+    height: 100px;;
 }
