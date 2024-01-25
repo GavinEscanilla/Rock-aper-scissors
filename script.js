@@ -18,7 +18,7 @@ function pickRock(){
         result.textContent = 'win';
     }
 }
-function pickr(){
+function test(){
     let arr = ['rock','paper','scissor'];
     let random = arr[Math.floor(Math.random() * 3)];
     if (random === 'rock') {
@@ -31,4 +31,4 @@ function pickr(){
 
 }
 
-console.log(pickr());
+test();
