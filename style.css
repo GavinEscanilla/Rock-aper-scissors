@@ -1,18 +1,39 @@
 body{
-    display: flex;
-    flex-direction: column;
+    
 }
 h1{
     text-align: center;
 }
 div{
+    
     border: 1px solid black;
     height: 100px;
     width:100px;
-    margin-top: 20px;
-    padding: 20px;
+ margin-top: 20px;
+ 
 }
+
 .AI{
+    background-color: red;
+    float: right;
+}
+.player{
+    
+    float: left;
+    background-color: green;
+    
+}
+#result{
     display: flex;
-    justify-content: end;
+    border: 1px solid black;
+    width: 400px;
+    height: 100px;
+    background-color: pink;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   justify-content: center;
+   
 }
