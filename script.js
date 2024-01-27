@@ -5,30 +5,61 @@ const AiR = document.getElementById('AIRock');
 const AiP = document.getElementById('AIPaper');
 const AiS = document.getElementById('AIScissor');
 const result = document.getElementById('result');
-const arr = ['rock','paper','scissor'];
+const arr = [AiR,AiP,AiS];
 function pickRock(){
     const randomElement =arr[Math.floor(Math.random() * 3)];
-    AiR.style.background = '';
-    if (randomElement === 'rock') {
+    if (randomElement === AiR) {
         AiR.style.background = 'yellow';
+        AiP.style.background = 'red';
+        AiS.style.background = 'red';
         result.textContent = 'draw';
-    } else if (randomElement === 'paper') {
+    } else if (randomElement === AiP) {
         result.textContent = 'Lose';
+        AiP.style.background = 'yellow';
+        AiR.style.background = 'red';
+        AiS.style.background = 'red';
     } else {
         result.textContent = 'win';
+        AiS.style.background = 'yellow';
+        AiR.style.background = 'red';
+        AiP.style.background = 'red';
     }
 }
-function test(){
-    let arr = ['rock','paper','scissor'];
-    let random = arr[Math.floor(Math.random() * 3)];
-    if (random === 'rock') {
-        console.log('draw');
-    }else if (random === 'paper') {
-    console.log('lose');
+function pickPaper(){
+    const randomElement =arr[Math.floor(Math.random() * 3)];
+    if (randomElement === AiR) {
+        AiR.style.background = 'yellow';
+        AiP.style.background = 'red';
+        AiS.style.background = 'red';
+        result.textContent = 'win';
+    } else if (randomElement === AiP) {
+        result.textContent = 'draw';
+        AiP.style.background = 'yellow';
+        AiR.style.background = 'red';
+        AiS.style.background = 'red';
     } else {
-        console.log('win');
+        result.textContent = 'lose';
+        AiS.style.background = 'yellow';
+        AiR.style.background = 'red';
+        AiP.style.background = 'red';
     }
-
 }
-
-test();
+function pickScissor(){
+    const randomElement =arr[Math.floor(Math.random() * 3)];
+    if (randomElement === AiR) {
+        AiR.style.background = 'yellow';
+        AiP.style.background = 'red';
+        AiS.style.background = 'red';
+        result.textContent = 'lose';
+    } else if (randomElement === AiP) {
+        result.textContent = 'win';
+        AiP.style.background = 'yellow';
+        AiR.style.background = 'red';
+        AiS.style.background = 'red';
+    } else {
+        result.textContent = 'draw';
+        AiS.style.background = 'yellow';
+        AiR.style.background = 'red';
+        AiP.style.background = 'red';
+    }
+}
